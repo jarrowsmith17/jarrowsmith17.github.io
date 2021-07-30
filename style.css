@@ -100,7 +100,8 @@ h2 {
 }
 .fa-twitter:hover,
 .fa-instagram:hover,
-.fa-github:hover {
+.fa-github:hover,
+.fa-linkedin:hover {
   color: #a8a8a8; /*hover colour*/
 }
 /*footer*/
