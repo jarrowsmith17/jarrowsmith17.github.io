@@ -2,4 +2,4 @@
 
 A personal portfolio website used to demonstrate my abilities.
 
-Coded using HMTL, CSS, Bootstrap JS
+Coded using HMTL, Bootstrap, CSS and Javascript.
