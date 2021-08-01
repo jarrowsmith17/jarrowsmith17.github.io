@@ -25,13 +25,15 @@ h2{
 }
 
 body {
+  margin: 0px !important;
   background-color: var(--clr-primary-900);
   color: var(--clr-font-200);
   font-family: var(--ff-primary);
   font-weight: 400;
 }
 
-.welcome{
+.welcome,
+.projects{
   padding-left: 5%;
   padding-right: 5%;
 }
