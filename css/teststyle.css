@@ -8,6 +8,11 @@
   --ff-primary: "Roboto", sans-serif;
   --ff-accent: "Playfair Display", serif;
 }
+
+h1{
+  font-size: 3em!important;
+  color: var(--clr-accent-500)
+}
 h2{
   font-size: 2em!important;
   color: var(--clr-accent-500)
@@ -32,12 +37,53 @@ body {
   font-weight: 400;
 }
 
+nav{
+  margin-bottom: 4em;
+}
+
 .welcome,
 .projects{
   padding-left: 5%;
   padding-right: 5%;
 }
 
+.welcome_text{
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
 .projects{
   background-color: var(--clr-primary-700);
+}
+
+
+/* SOCIALS */
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-twitter {
+  color: #1da1f2; /*Facebooks colour*/
+}
+
+.fa-github {
+  color: #f1502f;
+}
+.fa-instagram {
+  color: #833AB4; /*Instagram colour*/
+}
+
+.fa-codepen{
+  color: #fff;
+}
+
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-codepen:hover {
+  color: #a8a8a8; /*hover colour*/
 }
