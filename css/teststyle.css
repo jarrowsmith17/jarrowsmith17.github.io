@@ -5,23 +5,33 @@
   --clr-accent-500: #FC7900;
   --clr-font-200: #DDD;
 
+  --clr-neon: #ff5700;
+
   --ff-primary: "Roboto", sans-serif;
   --ff-accent: "Playfair Display", serif;
-}
-
-h1{
-  font-size: 3em!important;
-  color: var(--clr-accent-500)
-}
-h2{
-  font-size: 2em!important;
-  color: var(--clr-accent-500)
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1,h2{
+  color: var(--clr-accent-500);
+  font-family:var(--ff-accent) ;
+}
+
+h1{
+  font-size: 3em!important;
+}
+
+h2{
+  font-size: 2em!important;
+}
+
+span{
+  color:var(--clr-accent-500);
 }
 
 #logo {
@@ -48,8 +58,13 @@ nav{
 }
 
 .welcome_text{
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
+}
+
+.about_graphic{
+  width: 100%;
+  height: auto;
 }
 
 .padding {
@@ -59,6 +74,17 @@ nav{
   background-color: var(--clr-primary-700);
 }
 
+.card{
+  background-color: var(--clr-primary-900);
+  color: var(--clr-font-200);
+  border-radius: 10px;
+}
+
+.card > img{
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
 
 /* SOCIALS */
 .social a {
@@ -86,4 +112,77 @@ nav{
 .fa-linkedin:hover,
 .fa-codepen:hover {
   color: #a8a8a8; /*hover colour*/
+}
+
+/*Neon Button*/
+.neon-button{
+  color: var(--clr-neon);
+  font-size: 1rem;
+
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 
+  0 0 0.125em hsl(0 0% 100% / 0.3),
+  0 0 0.45em var(--clr-neon);
+
+  box-shadow:
+  inset 0 0 0.5em 0 var(--clr-neon),
+  0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+  width: 50%
+
+}
+
+/*Pseudo Element*/
+.neon-button::before{
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  background: var(--clr-neon);
+
+}
+
+.neon-button::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  box-shadow: 0 0 2em .5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opactiy 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus{
+  color: var(--clr-font-200);
+  text-shadow: none;
+
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before{
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after{
+  opacity: 1;
+  ;
+}
+
+
+@media screen and (max-width: 800px){
+  .welcome_text{
+    font-size: 1rem;
+  }
+
 }
