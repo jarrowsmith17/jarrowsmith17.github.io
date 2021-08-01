@@ -31,7 +31,11 @@ body {
   font-weight: 400;
 }
 
-.content{
+.welcome{
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.projects{
+  background-color: var(--clr-primary-700);
 }
