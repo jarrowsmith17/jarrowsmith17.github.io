@@ -2,8 +2,8 @@
   --clr-primary-700: #1b1e32;
   --clr-primary-900: #141628;
 
-  --clr-accent-500: #FC7900;
-  --clr-font-200: #DDD;
+  --clr-accent-500: #fc7900;
+  --clr-font-200: #ddd;
 
   --clr-neon: #ff5700;
 
@@ -17,21 +17,22 @@
   box-sizing: border-box;
 }
 
-h1,h2{
+h1,
+h2 {
   color: var(--clr-accent-500);
-  font-family:var(--ff-accent) ;
+  font-family: var(--ff-accent);
 }
 
-h1{
-  font-size: 3em!important;
+h1 {
+  font-size: 3em !important;
 }
 
-h2{
-  font-size: 2em!important;
+h2 {
+  font-size: 2em !important;
 }
 
-span{
-  color:var(--clr-accent-500);
+span {
+  color: var(--clr-accent-500);
 }
 
 #logo {
@@ -47,40 +48,42 @@ body {
   font-weight: 400;
 }
 
-nav{
+nav {
   margin-bottom: 4em;
 }
 
 .welcome,
-.projects{
+.projects {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.welcome_text{
+.welcome_text {
   font-size: 1.5em;
   font-weight: 400;
 }
 
-.about_graphic{
+.about_graphic {
   width: 100%;
   height: auto;
 }
 
 .padding {
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
-.projects{
+
+.skills,
+.connect {
   background-color: var(--clr-primary-700);
 }
 
-.card{
+.card {
   background-color: var(--clr-primary-900);
   color: var(--clr-font-200);
   border-radius: 10px;
 }
 
-.card > img{
+.card > img {
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -89,7 +92,8 @@ nav{
 /* SOCIALS */
 .social a {
   font-size: 4.5em;
-  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .fa-twitter {
   color: #1da1f2; /*Facebooks colour*/
@@ -99,10 +103,10 @@ nav{
   color: #f1502f;
 }
 .fa-instagram {
-  color: #833AB4; /*Instagram colour*/
+  color: #833ab4; /*Instagram colour*/
 }
 
-.fa-codepen{
+.fa-codepen {
   color: #fff;
 }
 
@@ -115,7 +119,7 @@ nav{
 }
 
 /*Neon Button*/
-.neon-button{
+.neon-button {
   color: var(--clr-neon);
   font-size: 1rem;
 
@@ -125,36 +129,30 @@ nav{
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-  text-shadow: 
-  0 0 0.125em hsl(0 0% 100% / 0.3),
-  0 0 0.45em var(--clr-neon);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-neon);
 
-  box-shadow:
-  inset 0 0 0.5em 0 var(--clr-neon),
-  0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 
   position: relative;
-  width: 50%
-
+  width: 50%;
 }
 
 /*Pseudo Element*/
-.neon-button::before{
+.neon-button::before {
   pointer-events: none;
-  content: '';
+  content: "";
   position: absolute;
   background: var(--clr-neon);
-
 }
 
-.neon-button::after{
-  content: '';
+.neon-button::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom:0;
-  box-shadow: 0 0 2em .5em var(--clr-neon);
+  bottom: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
   opacity: 0;
   background-color: var(--clr-neon);
   z-index: -1;
@@ -162,27 +160,23 @@ nav{
 }
 
 .neon-button:hover,
-.neon-button:focus{
+.neon-button:focus {
   color: var(--clr-font-200);
   text-shadow: none;
-
 }
 
 .neon-button:hover::before,
-.neon-button:focus::before{
+.neon-button:focus::before {
   opacity: 1;
 }
 
 .neon-button:hover::after,
-.neon-button:focus::after{
+.neon-button:focus::after {
   opacity: 1;
-  ;
 }
 
-
-@media screen and (max-width: 800px){
-  .welcome_text{
+@media screen and (max-width: 800px) {
+  .welcome_text {
     font-size: 1rem;
   }
-
 }
