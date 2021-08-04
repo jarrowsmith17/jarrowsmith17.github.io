@@ -53,7 +53,9 @@ nav {
 }
 
 .welcome,
-.projects {
+.skills,
+.projects,
+.connect {
   padding-left: 5%;
   padding-right: 5%;
 }
