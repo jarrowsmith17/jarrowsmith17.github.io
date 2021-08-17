@@ -55,7 +55,8 @@ nav {
 .welcome,
 .skills,
 .projects,
-.connect {
+.connect,
+.contact {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -138,7 +139,7 @@ nav {
   width: 50%;
 }
 
-/*Pseudo Element*/
+/*Neon Element*/
 .neon-button::before {
   pointer-events: none;
   content: "";
