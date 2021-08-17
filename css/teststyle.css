@@ -181,4 +181,7 @@ nav {
   .welcome_text {
     font-size: 1rem;
   }
+  .social a {
+    padding: 1rem;
+  }
 }
