@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+.test {
+  background-color: red;
+  border: solid green 1px;
+}
+
 h1,
 h2 {
   color: var(--clr-accent-500);
@@ -48,6 +53,10 @@ body {
   font-weight: 400;
 }
 
+.padding {
+  padding: 2rem;
+}
+
 nav {
   margin-bottom: 4em;
 }
@@ -61,6 +70,7 @@ nav {
   padding-right: 5%;
 }
 
+/*Welcome*/
 .welcome_text {
   font-size: 1.5em;
   font-weight: 400;
@@ -71,14 +81,31 @@ nav {
   height: auto;
 }
 
-.padding {
+/*Skills*/
+.skill-icons a {
+  font-size: 4.5em;
   padding: 2rem;
+}
+
+.fa-code {
+  color: var(--clr-font-200);
+}
+.fa-database {
+  color: var(--clr-font-200);
+}
+
+.fa-code:hover,
+.fa-database:hover,
+.fa-desktop:hover {
+  color: var(--clr-neon);
 }
 
 .skills,
 .connect {
   background-color: var(--clr-primary-700);
 }
+
+/*Projects*/
 
 .card {
   background-color: var(--clr-primary-900);
@@ -108,15 +135,8 @@ nav {
   color: #833ab4; /*Instagram colour*/
 }
 
-.fa-codepen {
-  color: #fff;
-}
-
-.fa-twitter:hover,
-.fa-instagram:hover,
 .fa-github:hover,
-.fa-linkedin:hover,
-.fa-codepen:hover {
+.fa-linkedin:hover {
   color: #a8a8a8; /*hover colour*/
 }
 
@@ -177,11 +197,22 @@ nav {
   opacity: 1;
 }
 
+/*Media Queries*/
+
 @media screen and (max-width: 800px) {
   .welcome_text {
     font-size: 1rem;
   }
   .social a {
     padding: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .welcome_text {
+    font-size: 2rem;
+    padding-top: 10%;
+  }
+  .about_graphic {
+    width: 80%;
   }
 }
