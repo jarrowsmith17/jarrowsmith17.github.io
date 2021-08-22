@@ -97,7 +97,8 @@ nav {
 
 .fa-code:hover,
 .fa-database:hover,
-.fa-desktop:hover {
+.fa-desktop:hover,
+.fa-book:hover {
   color: var(--clr-neon);
 }
 
