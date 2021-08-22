@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,10 +181,10 @@
           <h2 class="display-4">Contact</h2>
         </div>
         <div class="col-12 contact padding" id="contact">
-          <form id="contactForm" action=”mailto:jacob.arrowsmith17@gmail.com”
-          method=”POST”
-          enctype=”multipart/form-data”
-          name=”EmailForm”>
+          <form id="contactForm" action="mailto:jacob.arrowsmith17@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+          name="EmailForm">
 
             <!-- Name input -->
             <div class="mb-3">
