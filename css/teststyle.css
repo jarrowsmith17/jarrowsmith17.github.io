@@ -6,6 +6,7 @@
   --clr-font-200: #ddd;
 
   --clr-neon: #ff5700;
+  --clr-neon-2: #ffff00;
 
   --ff-primary: "Roboto", sans-serif;
   --ff-accent: "Playfair Display", serif;
@@ -189,14 +190,50 @@ nav {
   text-shadow: none;
 }
 
-.neon-button:hover::before,
-.neon-button:focus::before {
-  opacity: 1;
+/*Neon Button*/
+.neon-button-2 {
+  color: var(--clr-neon-2);
+  font-size: 1rem;
+
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon-2) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-neon-2);
+  margin-top: 2%;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon-2), 0 0 0.5em 0 var(--clr-neon-2);
+
+  position: relative;
+  width: 50%;
+}
+/*Neon Element 2*/
+.neon-button-2::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon-2);
 }
 
-.neon-button:hover::after,
-.neon-button:focus::after {
-  opacity: 1;
+.neon-button-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon-2);
+  opacity: 0;
+  background-color: var(--clr-neon-2);
+  z-index: -1;
+  transition: opactiy 100ms linear;
+}
+
+.neon-button-2:hover,
+.neon-button-2:focus {
+  color: var(--clr-font-200);
+  text-shadow: none;
 }
 
 /*Media Queries*/
