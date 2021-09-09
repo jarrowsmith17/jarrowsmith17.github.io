@@ -95,18 +95,32 @@ nav {
   padding: 2rem;
 }
 
-.fa-code {
+.fa-code,
+.fa-database,
+.fa-book,
+.fa-desktop {
   color: var(--clr-font-200);
+  width: 4.5em !important;
+  height:auto !important;
 }
-.fa-database {
-  color: var(--clr-font-200);
-}
+
 
 .fa-code:hover,
 .fa-database:hover,
 .fa-desktop:hover,
 .fa-book:hover {
   color: var(--clr-neon);
+}
+.skills-content{
+  font-size: 2em;
+}
+.nav > .active{
+  background-color: var(--clr-neon);
+}
+.nav > button{
+  width: auto;
+  height: auto;
+  margin:5%;
 }
 
 .skills,

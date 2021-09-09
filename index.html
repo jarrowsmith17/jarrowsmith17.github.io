@@ -24,6 +24,7 @@
 
     <script src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
     <script src="js/script.js"></script> 
+    <script src="js/bootstrap.js"></script> 
     <title>Jacob Arrowsmith - Computer Science Graduate & Developer</title>
 </head>
 <body>
@@ -88,11 +89,12 @@
       <div class="col-12">
         <h2 class="display-4">Skills</h2>
       </div>
-      <div class="container skill-icons"> 
+      <!-- <div class="container skill-icons"> 
 
         <div class="col-sm-12 col-md-4 col-lg-4 d-md-inline">
           <a><i class="fas fa-code" alt="programming languages"></i></a>
         </div>
+        
 
         <div class="col-sm-12 col-md-4 col-lg-4 d-md-inline">
           <a><i class="fas fa-book" alt="libraries"></i></a>
@@ -106,7 +108,22 @@
           <a><i class="fas fa-desktop" alt="misc"></i></a>
         </div>
 
+      </div> -->
+      <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="v-pills-code-tab" data-bs-toggle="pill" data-bs-target="#v-pills-code" type="button" role="tab" aria-controls="v-pills-code" aria-selected="true"><i class="fas fa-code" alt="programming languages"></i></button>
+          <button class="nav-link" id="v-pills-libraries-tab" data-bs-toggle="pill" data-bs-target="#v-pills-libraries" type="button" role="tab" aria-controls="v-pills-libraries" aria-selected="false"><i class="fas fa-book" alt="libraries"></i></button>
+          <button class="nav-link" id="v-pills-database-tab" data-bs-toggle="pill" data-bs-target="#v-pills-database" type="button" role="tab" aria-controls="v-pills-database" aria-selected="false"><i class="fas fa-database" alt="database technologies"></i></button>
+          <button class="nav-link" id="v-pills-misc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-misc" type="button" role="tab" aria-controls="v-pills-misc" aria-selected="false"><i class="fas fa-desktop" alt="misc"></i></button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab"><p class="skills-content">Python, Java, HTML, CSS, JavaScript, SQL, C++, C.</p></div>
+          <div class="tab-pane fade" id="v-pills-libraries" role="tabpanel" aria-labelledby="v-pills-libraries-tab"><p class="skills-content">Bootstrap, React.JS</p></div>
+          <div class="tab-pane fade" id="v-pills-database" role="tabpanel" aria-labelledby="v-pills-database-tab"><p class="skills-content">MySQL, SQL Server</p></div>
+          <div class="tab-pane fade" id="v-pills-misc" role="tabpanel" aria-labelledby="v-pills-misc-tab"><p class="skills-content">Linux OS, Microsoft Office (Access, Excel, PowerPoint, Word), Adobe XD</p></div>
+        </div>
       </div>
+      
 
       
       
