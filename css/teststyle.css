@@ -78,8 +78,7 @@ nav {
 .welcome,
 .skills,
 .projects,
-.connect,
-.contact {
+.connect {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -269,6 +268,9 @@ nav {
   }
   .social a {
     padding: 1rem;
+  }
+  .skill_font li {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 400px) {
